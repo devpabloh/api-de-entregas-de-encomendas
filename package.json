@@ -1,0 +1,34 @@
+{
+  "name": "api-de-entregas-de-encomendas",
+  "version": "1.0.0",
+  "description": "API de entrega de encomendas utilizando node, express, prisma, testes com jest e banco de dados postgreSQL",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "keywords": [
+    "api",
+    "delivery",
+    "logistics",
+    "node",
+    "express",
+    "prisma",
+    "jest",
+    "postgresql",
+    "parcels",
+    "shipping",
+    "tracking",
+    "backend"
+  ],
+  "author": "Pablo Henrique Ferreira de França",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^20.14.12",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
+}
