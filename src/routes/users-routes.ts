@@ -5,6 +5,6 @@ import { UsersControllers } from "@/controllers/users-controllers";
 const usersRoutes = Router()
 const usersControllers = new UsersControllers()
 
-usersRoutes.get("/", usersControllers.create)
+usersRoutes.post("/", usersControllers.create)
 
 export {usersRoutes}
