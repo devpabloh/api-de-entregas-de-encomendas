@@ -29,3 +29,7 @@ model User{
 
   @@map("users")
 }
+
+model Delivery {
+  id String @id @default(uuid())
+}
