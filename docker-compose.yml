@@ -7,5 +7,3 @@ services:
       POSTGRESQL_USERNAME: postgres
       POSTGRESQL_PASSWORD: "@Tais84671514"
       POSTGRESQL_DATABASE: "apiDeEntregas"
-
-      
