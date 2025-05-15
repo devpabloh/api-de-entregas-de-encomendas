@@ -2,9 +2,8 @@ import { Request, Response, NextFunction } from "express";
 import { AppError } from "@/utils/AppError";
 import { ZodError } from "zod";
 
-
-export function errorHandling( error:any, request: Request, response: Response, next:NextFunction){
-    if( error instanceof AppError){
+export function errorHandling(error:any , request: Request, response: Response, next:NextFunction){
+    if(error instanceof AppError){
         return response.status(error.statusCode).json({message: error.message})
     }
 

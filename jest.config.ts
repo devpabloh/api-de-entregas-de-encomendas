@@ -1,5 +1,3 @@
-
-
 import type {Config} from 'jest';
 
 const config: Config = {
@@ -12,7 +10,7 @@ const config: Config = {
     "<rootDir>/src/**/*.test.ts", // O testMatch server para especificar os arquivos que serão testados
   ],
   moduleNameMapper: {
-    "^/(.*)$": "<rootDir>/src/$1" // o modulenamemapper é usado para mapear os arquivos que serão testados
+    "^@/(.*)$": "<rootDir>/src/$1" // o modulenamemapper é usado para mapear os arquivos que serão testados
   }
 };
 
