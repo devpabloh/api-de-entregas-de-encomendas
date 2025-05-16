@@ -37,8 +37,13 @@ describe('UsersController', () => {
     it("should throw a validation error if email is invalid", async ()=>{
         const response = await request(app).post("/users").send(
             {
-                
+                name: "Test user",
+                email: "invalidemail",
+                password: "123456"
             }
         )
+
+        expect(response.status).toBe(400)
+        expect(response.body.message).toBe("validation error")
     })
 })
