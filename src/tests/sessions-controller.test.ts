@@ -7,14 +7,14 @@ describe("SessionsController", ()=>{
     it("should authenticate a and get access token", async ()=>{
         const userResponse = await request(app).post("/users").send({
             name: "Test user",
-            email: "pablohenriqueadm94@gmail.com",
+            email: "testuser1@gmail.com",
             password: "1234567"
         })
 
         user_id = userResponse.body.id
 
         const sessionResponse = await request(app).post("/sessions").send({
-            email: "pablohenriqueadm94@gmail.com",
+            email: "testuser1@gmail.com",
             password: "1234567" 
         })
 
