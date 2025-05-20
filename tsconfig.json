@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["ES2022"],
+    "lib": ["ES2023"],
 
     "paths": {
       "@/*": ["./src/*"]
@@ -12,6 +12,6 @@
     "forceConsistentCasingInFileNames": true,
 
     "strict": true,
-    "skipDefaultLibCheck": true
+    "skipLibCheck": true
   }
 }

@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { prisma} from "@/database/prisma"
 import { AppError } from "@/utils/AppError";
 import { hash } from "bcrypt";
-import {z} from "zod"
+import { z } from "zod";
 
 class UsersControllers{
 
